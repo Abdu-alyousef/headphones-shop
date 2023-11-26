@@ -59,6 +59,7 @@
         border: none;
         width: 25rem;
         padding: .5rem;
+        background-color: $color-secondary;
         border-bottom: .1rem solid #fff;
         font-size: 1.4rem;
         color: #fff;
@@ -67,6 +68,7 @@
             border: none;
             outline: none;
             border-radius: 0;
+            border-bottom: .1rem solid #fff;
         }
     }
 
