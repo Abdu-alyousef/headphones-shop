@@ -1,0 +1,91 @@
+.footer {
+    background-color: $color-secondary;
+    grid-column: full-start / full-end;
+    padding: 4rem;
+    margin-top: 15rem;
+}
+
+.list {
+    list-style: none;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 2rem;
+    align-items: center;
+
+    &__link:link,
+    &__link:visited {
+        font-size: 1.4rem;
+        color: #fff;
+        text-decoration: none;
+        font-family: $font-display;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1.5rem;
+        display: block;
+        transition: all .2s;
+    }
+
+    &__link:hover,
+    &__link:active {
+        background-color: rgba(#fff, .05);
+        transform: translateY(-3px);
+    }
+}
+
+.newsletter {
+   margin-top: 0;
+   margin-bottom: 3rem;
+   color: #fff;
+   font-size: 1.4rem;
+   margin-right: auto;
+   margin-left: auto;
+   text-align: center;
+   width: 70%;
+}
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    &__email {
+        color: #fff;
+        font-size: 1.4rem;
+    }
+
+    &__input {
+     
+        border: none;
+        width: 25rem;
+        padding: .5rem;
+        background-color: $color-secondary;
+        border-bottom: .1rem solid #fff;
+        font-size: 1.4rem;
+        color: #fff;
+        &:focus {
+            outline: none;
+            background-color: #3d3d3d
+        }
+    }
+
+    &__btn {
+        color: #fff;
+        background-color: $color-secondary;
+        transition: all .2s;
+    }
+    &__btn:hover {
+        color: rgba(255,255,255, .7);
+    }
+ 
+}
+
+.copyright {
+    font-size: 1.4rem;
+    color: $color-grey-light-2;
+    margin-top: 6rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    width: 70%;
+}
